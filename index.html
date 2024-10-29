@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+    <div class="start-window">
+        <h1>The quiz game</h1>
+        <div class="dificulty-level">
+            <label for="difficulty">Select the difficulty Level</label>
+            <select name="difficulty" id="difficulty">
+                <option value="10" selected>Super Easy</option>
+                <option value="8">Easy</option>
+                <option value="5">Medium</option>
+                <option value="3">Hard</option>
+                <option value="2">Extreme</option>
+                <option value="1">Ultimate</option>
+            </select>
+            <label for="noOfQuestion">select the no of questions</label>
+            <select name="number" id="number">
+                <option value="5">5</option>
+                <option value="8">8</option>
+                <option value="10">11</option>
+            </select>
+        </div>
+        <img id="start" src="start.svg" alt="">
+    </div>
+    <div class="quiz-app">
+        <div class="quiz-header">
+            <div class="quiz-header-content">
+                <h1 class="quiz-title">My Quiz App</h1>
+                <div class="quiz-timer">Time left <span class="time-left-value"></span></div>
+            </div>
+            <div class="quiz-progress"></div>
+        </div>
+
+        <div class="quiz-question-container">
+            <h2 class="quiz-question"><span class="quiz-questions-current">1</span>. What does HTML stands for?</h2>
+            <div class="quiz-options">
+                <!-- <button class="quiz-option">
+                    <div class="quiz-option-text">Hyper Text Markdown Language</div>
+                    <img class="quiz-option-image">
+                </button>
+                <button class="quiz-option correct">
+                    <div class="quiz-option-text">Hyper Text Markdown Language</div>
+                    <img class="quiz-option-image">
+                </button>
+                <button class="quiz-option incorrect">
+                    <div class="quiz-option-text">Hyper Text Markdown Language</div><img class="quiz-option-image">
+                </button>
+                <button class="quiz-option">
+                    <div class="quiz-option-text">Hyper Text Markdown Language</div><img class="quiz-option-image">
+                </button> -->
+            </div>
+        </div>
+
+        <div class="hr"></div>
+        <div class="quiz-questions-left">
+            <span class="quiz-questions-current">1</span> of <span class="quiz-questions-total">5</span> questions
+        </div>
+    </div>
+
+    <div class="end-window">
+        <h1>The End</h1>
+    </div>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

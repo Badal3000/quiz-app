@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    padding: 72px;
+    background-color: #007bff;
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.start-window{
+    background-color: rgb(126, 15, 15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 500px;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0px 3px 5px rgba(100, 172, 220, 0.618);
+}
+.start-window img{
+    height: 100px;
+    border-radius: 100%;
+}
+.start-window img:hover{
+    transform: scale(1.2);
+}
+.start-window img:active{
+    transform: scale(0.8);
+}
+.quiz-app{
+    width: 500px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 3px 5px rgba(100, 172, 220, 0.618);
+    border-radius: 4px;
+    display: none;
+}
+.dificulty-level{
+    padding: 10px;
+    border:  black 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+.quiz-header{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    box-shadow: 0px 3px 5px rgba(100, 172, 220, 0.618);
+}
+.quiz-header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.quiz-title{
+    font-size: 20px;
+}
+.quiz-timer{
+    font-size: 14px;
+    padding: 8px 10px;
+    background: #cce5fe;
+    border-radius: 4px;
+    color: #728bad;
+}
+.time-left-value{
+    background-color: #32363a;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+.quiz-progress{
+    height: 4px;
+    background-color: #298cf2;
+    /* background-color: red; */
+    width: 100%;
+}
+
+.quiz-question-container{
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    padding-top: 18px;
+    padding-bottom: 28px;
+    /* border: 2px solid black; */
+    
+}
+.quiz-question{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.quiz-options{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+.quiz-option{
+    background-color: #eff8ff;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #c1d9ef;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quiz-option-text{
+    flex: 1;
+}
+.quiz-option-image{
+    height: 16px;
+}
+.quiz-option.correct{
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+.quiz-option.correct .quiz-option-image{
+    content: url(check.svg);
+}
+.quiz-option.incorrect{
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+.quiz-option.incorrect .quiz-option-image{
+    content: url(cross.svg);
+}
+.quiz-option:not(.correct):not(.incorrect) .quiz-option-image{
+    display: none;
+}
+.hr{
+    width: 100%;
+    border: 1px solid #eaeaea;
+}
+.quiz-questions-left{
+    font-size: 14px;
+    padding: 16px 20px;
+}
+.quiz-questions-current{
+    font-weight: 700;
+}
+.quiz-questions-total{
+    font-weight: 700;
+}
+
+.end-window{
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 500px;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0px 3px 5px rgba(100, 172, 220, 0.618);
+}
+
+.analysis2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.ansDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.ques{
+    padding: 5px 10px;
+    background-color: #eff8ff;
+    border: 1px solid #c1d9ef;
+    border-radius: 4px;
+    width: 100%;
+}
+.ans{
+    padding: 5px 10px;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    border-radius: 4px;
+    width: 100%;
+}
+@media (max-width:500px){
+    main{
+        padding: 50px;
+        
+    }
+}
